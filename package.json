@@ -1,6 +1,6 @@
 {
   "name": "filter-tree-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Filter tree list by key and expression function",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

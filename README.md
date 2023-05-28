@@ -26,7 +26,6 @@ import { arrayTreeFilter } from 'filter-tree-list';
           childrenKeyName: 'nodes'
         }
       );
-      }
 ```
 
 * `this.datasource`: is your tree source 
