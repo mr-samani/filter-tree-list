@@ -1,4 +1,4 @@
-import { arrayTreeFilter } from '../index';
+import { filterTreeList } from '../index';
 
 var dataTree = [
     { title: 'a1' },
@@ -28,7 +28,7 @@ var dataTree = [
 ];
 
 test('filter items in level 1', () => {
-    expect(arrayTreeFilter(dataTree, (x => x.title.toLowerCase().includes('a1')))).toEqual([{ title: 'a1' }]);
+    expect(filterTreeList(dataTree, (x => x.title.toLowerCase().includes('a1')))).toEqual([{ title: 'a1' }]);
 });
 
 
@@ -39,7 +39,7 @@ test('filter items and find in level 2', () => {
                 { title: 'a3-3' }
             ]
         }];
-    expect(arrayTreeFilter(dataTree, (x => x.title.toLowerCase().includes('a3-3')))).toEqual(expectedResult);
+    expect(filterTreeList(dataTree, (x => x.title.toLowerCase().includes('a3-3')))).toEqual(expectedResult);
 });
 
 
@@ -65,7 +65,7 @@ test('filter items by find title include "4"', () => {
             ]
         }
     ];
-    expect(arrayTreeFilter(dataTree, (x => x.title.toLowerCase().includes('4')))).toEqual(expectedResult);
+    expect(filterTreeList(dataTree, (x => x.title.toLowerCase().includes('4')))).toEqual(expectedResult);
 });
 
 
@@ -85,7 +85,7 @@ test('test children key is "nodes"', () => {
             ]
         }
     ];
-    expect(arrayTreeFilter(tree,
+    expect(filterTreeList(tree,
         (x => x.title.toLowerCase().includes('c')),
         {
             childrenKeyName: 'nodes'

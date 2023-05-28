@@ -6,7 +6,7 @@
  * @param options تنظیمات : کلیدی که فرزندان در آن قرار دارد
  * @returns لیست درختی فیلتر شده
  */
-export function arrayTreeFilter<T>(
+export function filterTreeList<T>(
     data: T[],
     filterFn: (item: T) => boolean,
     options?: {
@@ -14,8 +14,8 @@ export function arrayTreeFilter<T>(
     }
 ) {
     options = options || {};
-    let childrenKey = options.childrenKeyName || "children";
-    var children = data || [];
+    const childrenKey = options.childrenKeyName || "children";
+    const children = data || [];
     const getNodes = (result:T[], object: T) => {
         if (filterFn(object)) {
             result.push(object);
