@@ -2,7 +2,7 @@
 
 🎉 Filter tree list by key and expression function
 
-## Demo [demo](https://mr-samani.github.io/filter-tree-list/)
+## Demo: [demo](https://mr-samani.github.io/filter-tree-list/)
 
 ![npm bundle size](https://img.shields.io/bundlephobia/min/filter-tree-list?color=success&label=Size&logoColor=red)
 ![npm](https://img.shields.io/npm/dw/filter-tree-list?label=Downloads)
