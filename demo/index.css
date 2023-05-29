@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.main {
+    border: 1px #ececec solid;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .search-box {
+    border: 1px #dfdfdf solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px; 
+}
+
+
+
+/*---------- highlight json --------------------------*/
+pre {
+    padding: 5px;
+    margin: 5px;
+    overflow: auto;
+}
+
+.string {
+    color: #00b561;
+}
+
+.number {
+    color: darkorange;
+}
+
+.boolean {
+    color: blue;
+}
+
+.null {
+    color: magenta;
+}
+
+.key {
+    color: #d50027;
+    font-weight: bold;
+}
+
+/*-------------- end of highlight json ---------------*/
